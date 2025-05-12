@@ -67,16 +67,8 @@ const MainAppNavigator = () => {
         <Tab.Screen name="Vendors" component={VendorsStack} options={{ headerShown: false }} />
         <Tab.Screen name="Marketplace" component={MarketplaceScreen} />
         <Tab.Screen name="Teams" component={TeamScreen} />
-        {/* <Tab.Screen
-          name="Logs"
-          component={LogsScreen}
-          options={{ tabBarButton: () => null, headerShown: false }}
-        />
-        <Tab.Screen
-          name="Settings"
-          component={SettingsScreen}
-          options={{ tabBarButton: () => null, headerShown: false }}
-        /> */}
+        <Tab.Screen name="Logs" component={LogsScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
       <GlobalMenuModal
         visible={menuVisible}
