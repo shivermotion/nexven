@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "vendorfied-mobile",
-    "slug": "vendorfied-mobile",
+    "name": "NexVen",
+    "slug": "nexven",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

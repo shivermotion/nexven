@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import AppNavigator from './src/navigation/AppNavigator';
+import { MSTProvider } from './src/schema/mobx/MobxContext';
+import { MSTRoot } from './src/schema/mobx/MobxRoot';
+// import { ThemeProvider } from './src/providers/ThemeProvider';
+// import { LocalizationProvider } from './src/providers/LocalizationProvider';
+// import { Ionicons } from '@expo/vector-icons'; // Uncomment if you want to use icons
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <MSTProvider value={MSTRoot}>
+      <AppNavigator />
+    </MSTProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
